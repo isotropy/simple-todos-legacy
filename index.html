@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="dist/ui/bundle.js"></script>
+    <style>
+      th { background: #eee; padding: 1em }
+      td { padding: 1em; border-bottom: 1px solid #ccc; }
+    </style>
+  </head>
+  <body>
+      <div class="todos">
+        <table>
+          <thead>
+            <th>Item</th>
+            <th>Assigned to</th>
+            <th>Actions</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div class="add-todo">
+        <p style="line-height: 2em">
+          <span style="width: 100px; display: inline-block">Description: </span>
+          <input id="new-desc-textbox" type="" /><br />
+          <span style="width: 100px; display: inline-block">Assigned to: </span>
+          <input id="new-assignee-textbox" type="" />
+        </p>
+        <p>
+          <button id="add-todo">Add a Todo</button>
+        </p>
+      </div>
+  </body>
+</html>

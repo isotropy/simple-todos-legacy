@@ -1,0 +1,21 @@
+{
+  "author": "Jeswin<jeswinpk@agilehead.com>",
+  "private": true,
+  "scripts": {
+    "start": "./build.sh && node dist/app.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-core": "6.16.0",
+    "babel-plugin-transform-async-to-generator": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-preset-node6": "*",
+    "babel-preset-stage-3": "*",
+    "json-loader": "*",
+    "mocha": "*",
+    "should": "*",
+    "source-map-loader": "*",
+    "webpack": "latest"
+  }
+}

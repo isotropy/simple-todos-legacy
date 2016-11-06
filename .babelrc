@@ -1,0 +1,5 @@
+{
+  "sourceMaps": true,
+  "presets": ["node6", "stage-3"],
+  "plugins": ["transform-class-properties", "transform-async-to-generator"]
+}
