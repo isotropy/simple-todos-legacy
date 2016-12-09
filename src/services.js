@@ -17,7 +17,7 @@ export async function addTodo(desc, assignee) {
 }
 
 export async function updateTodo(desc, assignee, newDesc) {
-  db.todos = db.todos.map(todo => todo.desc === desc && todo.assignee === assignee ? { desc: newDesc, ... todo } : todo );
+  db.todos = db.todos.map(todo => todo.desc === desc && todo.assignee === assignee ? { desc: newDesc, ...todo } : todo );
 }
 
 export async function deleteTodo(deleted) {
