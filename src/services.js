@@ -17,10 +17,9 @@ export async function addTodo(desc, assignee) {
 }
 
 export async function updateTodo(desc, assignee, newDesc) {
-  const todo = db.todos.find(todo => todo.desc === desc && todo.assignee === assignee);
-  todo.desc = newDesc;
+  db.todos = db.todos.map(todo => todo.desc === desc && todo.assignee === assignee ? { desc: newDesc, ... todo } : todo );
 }
 
 export async function deleteTodo(deleted) {
-  db.todos = db.todos.filter(todo => todo.desc !== deleted.desc || todo.assignee !== deleted.assignee)
+  db.todos = db.todos.filter(todo => !(todo.desc === deleted.desc && todo.assignee === deleted.assignee))
 }
