@@ -1,5 +1,5 @@
 {
-  "author": "Jeswin<jeswinpk@agilehead.com>",
+  "author": "Isotropy Team<isotropy@agilehead.com>",
   "private": true,
   "scripts": {
     "start": "./build.sh && node dist/app.js"
